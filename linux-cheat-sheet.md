@@ -1,3 +1,20 @@
+## Updating OS
+
+### For debian based OS
+
+`sudo apt update`
+
+`sudo apt upgrade`
+
+`sudo apt dist-upgrade`
+
+`sudo apt autoremove`   This will remove outdated packages after upgrade.
+
+
+### For redhat based OS
+
+`yum update`
+
 
 ## Dealing with Files
 
@@ -29,3 +46,9 @@ This will make `dateTimeFileName-14-05-2020`
 You can add `%y` to get year.
 
 [append-date-to-filename-in-linux](https://stackoverflow.com/questions/1795678/append-date-to-filename-in-linux)
+
+### Changing file permission to executable
+
+When you create a shell-script, to execute it, we need to change file permission. To do it.
+
+`chmod +x filename.sh`
