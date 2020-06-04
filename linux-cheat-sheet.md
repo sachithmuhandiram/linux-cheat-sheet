@@ -18,6 +18,28 @@
 
 ## Dealing with Files
 
+### Checking differences between files
+
+To check difference between two files. Following command will show just basic details.
+
+`diff file1 file2`
+
+To get detailed description
+
+`diff -u file1 file2`
+
+#### Getting changes to a file
+
+If we have two files and want to get them their difference to a file.
+
+`diff file1 file2 > differences.diff`
+
+Applying changes to `file1`
+
+`patch file1 < differences.diff`
+
+First we **MUST** create `.diff` file as mention above and then `patch` command.
+
 ### Getting total number of lines in a file
 
 If we have a large file and we need to get number of lines in that file :
