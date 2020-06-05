@@ -24,7 +24,7 @@ To check difference between two files. Following command will show just basic de
 
 `diff file1 file2`
 
-To get detailed description
+To get detailed line by line description. (only different)
 
 `diff -u file1 file2`
 
