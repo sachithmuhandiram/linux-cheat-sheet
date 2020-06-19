@@ -69,6 +69,24 @@ You can add `%y` to get year.
 
 [append-date-to-filename-in-linux](https://stackoverflow.com/questions/1795678/append-date-to-filename-in-linux)
 
+### Searching content in files
+
+If we want to search something in a file or directory, we can use following things.
+
+#### Find a file
+
+`find / -name "keyword"`
+
+Here `/` means root directory, so this will check the whole computer. If you want to search in specific directory, you can use `/my/dir` insted of `/`
+
+#### Find a word 
+
+If we want to find if a keyword is in a file inside a directory, we can use.
+
+`grep keyword *`
+
+This will check all the files in the directory and list all the file containing given `keyword`. Here `*` means check for all the files.
+
 ### Changing file permission to executable
 
 When you create a shell-script, to execute it, we need to change file permission. To do it.
